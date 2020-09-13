@@ -1,10 +1,10 @@
-:root{
+:root {
 	--cornerRadius: 20px;
 	--itemSize: 240px;
 	--smallItemFaktor: 0.8;
 }
 
-html, body{
+html, body {
 	padding: 0;
 	margin: 0;
 	margin-bottom: 20px;
@@ -12,23 +12,23 @@ html, body{
   background: #111111;
 }
 
-h1, h2, h3, h4, p{
+h1, h2, h3, h4, p {
   margin: 0;
   color: #c9c9c9;
   font-family: roboto;
 }
 
-.wrapperFlexDivLinks{
+.wrapperFlexDivLinks {
 	display: flex;
 }
 
-.wrapperFlexDivRechts{
+.wrapperFlexDivRechts {
 	display: flex;
 	justify-content: flex-end;
 }
 
 
-.balkenLinks{
+.balkenLinks {
   width: 90%;
   height: 500px;
   border-radius: 0 var(--cornerRadius) var(--cornerRadius) 0;
@@ -41,12 +41,12 @@ h1, h2, h3, h4, p{
   align-items: center;
 }
 
-#greetingBalken{
+#greetingBalken {
 	flex-direction: row;
 }
 
 
-.greetingDiv{
+.greetingDiv {
   width: max-content;
   border-radius: 0 var(--cornerRadius) var(--cornerRadius) 0;
   background-color: black;
@@ -58,11 +58,11 @@ h1, h2, h3, h4, p{
   font-size: 100px;
 }
 
-.greeting2{
+.greeting2 {
   font-size: 20px;
 }
 
-.balkenRechts{
+.balkenRechts {
   width: 90%;
   height: 500px;
   border-radius: var(--cornerRadius) 0 0 var(--cornerRadius);
@@ -75,25 +75,25 @@ h1, h2, h3, h4, p{
   align-items: center;
 }
 
-.balkenHeader{
+.balkenHeader {
   padding-top: 25px;
 	margin-bottom: auto;
 	justify-self: center;
 }
 
-.balkenHeaderText{
+.balkenHeaderText {
 	font-size: 40px;
 }
 
-.reelWrapper{
+.reelWrapper {
 	width: inherit;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
 
-.projektItem{
-	width: calc(var(--itemSize) * var(--smallItemFaktor));
+.projektItem {
+	min-width: calc(var(--itemSize) * var(--smallItemFaktor));
 	height: calc(var(--itemSize) * var(--smallItemFaktor));
   border-radius: var(--cornerRadius);
   background-color: green;
@@ -101,18 +101,18 @@ h1, h2, h3, h4, p{
 	margin: 0 auto;
 }
 
-#mainItem{
-	width: var(--itemSize);
+#mainItem {
+	min-width: var(--itemSize);
 	height: var(--itemSize);
 }
 
-#arrowLinks{
+#arrowLinks {
 	color: #111111;
 	font-size: 100px;
 	margin-left: auto;
 }
 
-#arrowRechts{
+#arrowRechts {
 	color: #111111;
 	font-size: 100px;
 	margin-right: auto;
@@ -122,4 +122,14 @@ h1, h2, h3, h4, p{
 	color: #111111;
 	margin-bottom: auto;
 	padding-top: 5px;
+}
+
+@media only screen and (max-width: 1160px) {
+  .projektItem {
+    display: none;
+  }
+
+	#mainItem {
+		display: block;
+	}
 }
