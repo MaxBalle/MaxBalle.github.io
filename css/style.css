@@ -89,7 +89,7 @@ h3 {
 }
 
 #skillSec {
-	background-image: url("../res/berg.jpg");
+	background-image: url("./maxballe/res/berg.jpg");
 	display: flex;
 	flex-direction: column;
 	align-items: center;
