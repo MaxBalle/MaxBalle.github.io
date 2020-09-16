@@ -31,6 +31,7 @@ h3 {
 }
 
 .transparentSec {
+	background-color: grey;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -89,7 +90,7 @@ h3 {
 }
 
 #skillSec {
-	background-image: url("./maxballe/res/berg.jpg");
+	background-image: url("../res/berg.jpg");
 	display: flex;
 	flex-direction: column;
 	align-items: center;
