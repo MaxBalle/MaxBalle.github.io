@@ -1,135 +1,114 @@
 :root {
-	--cornerRadius: 20px;
-	--itemSize: 240px;
-	--smallItemFaktor: 0.8;
+	--sideMargin: 90px;
 }
 
+* { margin: 0, padding: 0 }
+
 html, body {
-	padding: 0;
-	margin: 0;
-	margin-bottom: 20px;
 	scroll-behavior: smooth;
-  background: #111111;
+  background: white;
+	margin: 0;
 }
 
 h1, h2, h3, h4, p {
   margin: 0;
+	padding: 0
   color: #c9c9c9;
+	color: grey;
   font-family: roboto;
 }
 
-.wrapperFlexDivLinks {
+h1 {
+	font-size: 7em;
+}
+
+h2 {
+	font-size: 3.8em;
+}
+
+h3 {
+	font-size: 2.4em;
+}
+
+.transparentSec {
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding: 180px 0;
+}
+
+.solidSec {
+	background-color: white;
+  padding: 180px var(--sideMargin);
+}
+
+.transparentSec h1, .transparentSec h2, .transparentSec h3 {
+	color: white;
+}
+
+#landingSec {
+	height: 100vh;
+	background-image: url("../res/profile.jpg");
 	display: flex;
-}
-
-.wrapperFlexDivRechts {
-	display: flex;
-	justify-content: flex-end;
-}
-
-
-.balkenLinks {
-  width: 90%;
-  height: 500px;
-  border-radius: 0 var(--cornerRadius) var(--cornerRadius) 0;
-  margin-top: 60px;
-  background-image: url("../res/profile.jpg");
-  background-size: cover;
-  background-position: bottom;
-  display: flex;
-	flex-direction: column;
   align-items: center;
+	padding: 0 var(--sideMargin);
 }
 
-#greetingBalken {
-	flex-direction: row;
+.icon {
+	width: 200px;
+	color: white;
+	font-size: 200px !important;
+	font-weight: lighter;
 }
 
-
-.greetingDiv {
-  width: max-content;
-  border-radius: 0 var(--cornerRadius) var(--cornerRadius) 0;
-  background-color: black;
-  padding: 25px;
-  padding-left: 40px;
+.scrollIcon {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	text-align: center;
 }
 
-.greeting1{
-  font-size: 100px;
+.iconWrapper {
+	width: 100%;
 }
 
-.greeting2 {
-  font-size: 20px;
+.gridContainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	background-color: grey;
 }
 
-.balkenRechts {
-  width: 90%;
-  height: 500px;
-  border-radius: var(--cornerRadius) 0 0 var(--cornerRadius);
-  margin-top: 60px;
-  background-color: black;
-  background-size: cover;
-  background-position: bottom;
-  display: flex;
-	flex-direction: column;
-  align-items: center;
-}
-
-.balkenHeader {
-  padding-top: 25px;
-	margin-bottom: auto;
+.gridItem {
+	margin: 10px;
+	background-color: darkgrey;
+	width: 450px;
+	height: 350px;
 	justify-self: center;
 }
 
-.balkenHeaderText {
-	font-size: 40px;
-}
-
-.reelWrapper {
-	width: inherit;
+#skillSec {
+	background-image: url("../res/berg.jpg");
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
 }
 
-.projektItem {
-	min-width: calc(var(--itemSize) * var(--smallItemFaktor));
-	height: calc(var(--itemSize) * var(--smallItemFaktor));
-  border-radius: var(--cornerRadius);
-  background-color: green;
-  padding: 15px;
-	margin: 0 auto;
+.projektHead {
+	padding-bottom: 120px;
 }
 
-#mainItem {
-	min-width: var(--itemSize);
-	height: var(--itemSize);
+.skillWrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	padding-top: 120px;
 }
 
-#arrowLinks {
-	color: #111111;
-	font-size: 100px;
-	margin-left: auto;
-}
-
-#arrowRechts {
-	color: #111111;
-	font-size: 100px;
-	margin-right: auto;
-}
-
-#hoverText{
-	color: #111111;
-	margin-bottom: auto;
-	padding-top: 5px;
-}
-
-@media only screen and (max-width: 1160px) {
-  .projektItem {
-    display: none;
-  }
-
-	#mainItem {
-		display: block;
-	}
+.skillItem {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
 }
