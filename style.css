@@ -1,0 +1,122 @@
+:root {
+	--sideMargin: 90px;
+}
+
+* { margin: 0, padding: 0 }
+
+html, body {
+	scroll-behavior: smooth;
+  background: white;
+	margin: 0;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+	padding: 0
+  color: #c9c9c9;
+	color: grey;
+  font-family: roboto;
+}
+
+h1 {
+	font-size: 7em;
+}
+
+h2 {
+	font-size: 3.8em;
+}
+
+h3 {
+	font-size: 2.4em;
+}
+
+h4 {
+	font-size: 1.8em;
+	margin-top: 40px;
+}
+
+.transparentSec {
+	background-color: grey;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding: 180px 0;
+}
+
+.solidSec {
+	background-color: white;
+  padding: 180px var(--sideMargin);
+}
+
+.transparentSec h1, .transparentSec h2, .transparentSec h3, .transparentSec h4 {
+	color: white;
+}
+
+#landingSec {
+	height: 100vh;
+	background-image: url("../res/profile.jpg");
+	display: flex;
+  align-items: center;
+	padding: 0 var(--sideMargin);
+}
+
+.greetingWrapper {
+	width: 300px;
+}
+
+.icon {
+	width: 200px;
+	color: white;
+	font-size: 200px !important;
+	font-weight: lighter;
+}
+
+.scrollIcon {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	text-align: center;
+}
+
+.iconWrapper {
+	width: 100%;
+}
+
+.gridContainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 3%;
+  row-gap: 40px;
+}
+
+.gridItem {
+	background-color: lightgrey;
+	height: 350px;
+}
+
+#skillSec {
+	background-image: url("../res/berg.jpg");
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.projektHead {
+	padding-bottom: 120px;
+}
+
+.skillWrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	padding-top: 120px;
+}
+
+.skillItem {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+}
