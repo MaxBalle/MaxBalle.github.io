@@ -30,6 +30,11 @@ h3 {
 	font-size: 2.4em;
 }
 
+h4 {
+	font-size: 1.8em;
+	margin-top: 40px;
+}
+
 .transparentSec {
 	background-color: grey;
 	background-size: cover;
@@ -43,7 +48,7 @@ h3 {
   padding: 180px var(--sideMargin);
 }
 
-.transparentSec h1, .transparentSec h2, .transparentSec h3 {
+.transparentSec h1, .transparentSec h2, .transparentSec h3, .transparentSec h4 {
 	color: white;
 }
 
@@ -53,6 +58,10 @@ h3 {
 	display: flex;
   align-items: center;
 	padding: 0 var(--sideMargin);
+}
+
+.greetingWrapper {
+	width: 300px;
 }
 
 .icon {
@@ -78,15 +87,13 @@ h3 {
 .gridContainer {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	background-color: grey;
+	column-gap: 3%;
+  row-gap: 40px;
 }
 
 .gridItem {
-	margin: 10px;
-	background-color: darkgrey;
-	width: 450px;
+	background-color: lightgrey;
 	height: 350px;
-	justify-self: center;
 }
 
 #skillSec {
