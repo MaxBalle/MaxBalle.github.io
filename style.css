@@ -101,6 +101,8 @@ h4 {
 
 #gridItem0 {
 	background-image: url("../res/megan.jpg");
+	background-size: cover;
+	background-position: center;
 }
 
 #skillSec {
