@@ -93,7 +93,14 @@ h4 {
 
 .gridItem {
 	background-color: lightgrey;
-	height: 250px;
+	height: 350px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#gridItem0 {
+	background-image: url("../res/megan.jpg");
 }
 
 #skillSec {
