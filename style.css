@@ -97,12 +97,13 @@ h4 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 #gridItem1 {
 	background-image: url("../res/megan.jpg");
-	background-size: auto; 
-	background-position: center;
 }
 
 #skillSec {
