@@ -54,7 +54,7 @@ h4 {
 
 #landingSec {
 	height: 100vh;
-	background-image: url("../res/profile.jpg");
+	background-image: url("res/profile.jpg");
 	display: flex;
   align-items: center;
 	padding: 0 var(--sideMargin);
@@ -103,7 +103,7 @@ h4 {
 }
 
 #gridItem0 {
-	background-image: url("../res/megan.jpg");
+	background-image: url("res/megan.jpg");
 }
 
 #gridItem1 {
@@ -111,23 +111,23 @@ h4 {
 }
 
 #gridItem2 {
-	background-image: url("../res/megan.jpg");
+	background-image: url("res/megan.jpg");
 }
 
 #gridItem3 {
-	background-image: url("../res/megan.jpg");
+	background-image: url("res/megan.jpg");
 }
 
 #gridItem4 {
-	background-image: url("../res/megan.jpg");
+	background-image: url("res/megan.jpg");
 }
 
 #gridItem5 {
-	background-image: url("../res/megan.jpg");
+	background-image: url("res/megan.jpg");
 }
 
 #skillSec {
-	background-image: url("../res/berg.jpg");
+	background-image: url("res/berg.jpg");
 	display: flex;
 	flex-direction: column;
 	align-items: center;
