@@ -93,7 +93,7 @@ h4 {
 
 .gridItem {
 	background-color: lightgrey;
-	height: 350px;
+	height: 300px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -107,7 +107,7 @@ h4 {
 }
 
 #gridItem1 {
-	background-image: url("../res/megan.jpg");
+	background-image: url("res/megan.jpg");
 }
 
 #gridItem2 {
