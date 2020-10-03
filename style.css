@@ -102,7 +102,27 @@ h4 {
 	background-repeat: no-repeat;
 }
 
+#gridItem0 {
+	background-image: url("../res/megan.jpg");
+}
+
 #gridItem1 {
+	background-image: url("../res/megan.jpg");
+}
+
+#gridItem2 {
+	background-image: url("../res/megan.jpg");
+}
+
+#gridItem3 {
+	background-image: url("../res/megan.jpg");
+}
+
+#gridItem4 {
+	background-image: url("../res/megan.jpg");
+}
+
+#gridItem5 {
 	background-image: url("../res/megan.jpg");
 }
 
