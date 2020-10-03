@@ -101,6 +101,7 @@ h4 {
 
 #gridItem1 {
 	background-image: url("../res/megan.jpg");
+	background-size: auto; 
 	background-position: center;
 }
 
