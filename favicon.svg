@@ -54,7 +54,8 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="stroke-width:23.26071548;fill:#000000"
+       style="stroke-width:23.26071548"
+       fill="yellow"
        d="M 8 0 A 8 8 0 0 0 0 8 A 8 8 0 0 0 8 16 A 8 8 0 0 0 16 8 A 8 8 0 0 0 8 0 z M 8 1 A 7 7 0 0 1 15 8 A 7 7 0 0 1 8 15 A 7 7 0 0 1 1 8 A 7 7 0 0 1 8 1 z "
        id="path53" />
     <g
@@ -72,4 +73,14 @@
          id="path3765" />
     </g>
   </g>
+  <style type="text/css">
+    path {
+      fill: black;
+    }
+    @media (prefers-color-scheme: dark) {
+      path, * {
+        fill: white;
+      }
+    }
+  </style>
 </svg>
