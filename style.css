@@ -123,7 +123,8 @@ h4 {
 }
 
 #gridItem0 {
-	background-image: url("res/megan.jpg");
+	background-image: url("res/coreicon.png");
+	background-size: 70%;
 }
 
 #gridItem1 {
@@ -135,15 +136,15 @@ h4 {
 }
 
 #gridItem3 {
-	background-image: url("res/megan.jpg");
+	background-image: url("res/monster.jpg");
 }
 
 #gridItem4 {
-	background-image: url("res/megan.jpg");
+	background-image: url("res/tisch.png");
 }
 
 #gridItem5 {
-	background-image: url("res/megan.jpg");
+	background-image: url("res/maske.jpg");
 }
 
 #skillSec {
@@ -200,5 +201,5 @@ h4 {
 }
 
 @@media (prefers-color-scheme: dark) {
-	
+
 }
