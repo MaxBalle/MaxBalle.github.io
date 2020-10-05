@@ -12,8 +12,7 @@ html, body {
 
 h1, h2, h3, h4, p, a {
   margin: 0;
-	padding: 0
-  color: #c9c9c9;
+	padding: 0;
 	color: grey;
   font-family: Roboto;
 	text-decoration: none;
@@ -86,6 +85,39 @@ h4 {
 	width: 100%;
 }
 
+.projektHead {
+	padding-bottom: 120px;
+}
+
+.projektHeadWrapper {
+	position: relative;
+}
+
+.viewAll {
+	border-style: solid;
+	padding: 0 0.3em;
+}
+
+#viewAllTop {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.viewAllBottomWrapper {
+	display: none;
+	justify-content: center;
+}
+
+#viewAllBottom {
+	margin-top: 60px;
+}
+
+.viewAll:hover {
+	cursor: pointer;
+	color: darkgrey;
+}
+
 .gridContainer {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -154,10 +186,6 @@ h4 {
 	align-items: center;
 }
 
-.projektHead {
-	padding-bottom: 120px;
-}
-
 .skillWrapper {
 	width: 100%;
 	display: grid;
@@ -187,6 +215,10 @@ h4 {
 	.transparentSec {
 		background-attachment: scroll;
 	}
+
+	.borderDiv {
+		opacity: 1;
+	}
 }
 
 @media only screen and (max-device-width: 600px) {
@@ -198,8 +230,12 @@ h4 {
 	.skillWrapper {
 		grid-template-columns: 1fr;
 	}
-}
 
-@@media (prefers-color-scheme: dark) {
+	#viewAllTop {
+		display: none;
+	}
 
+	.viewAllBottomWrapper {
+		display: flex;
+	}
 }
