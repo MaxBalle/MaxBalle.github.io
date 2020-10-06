@@ -179,6 +179,18 @@ h4 {
 	background-image: url("res/maske.jpg");
 }
 
+.hiddenP {
+	display: none;
+}
+
+#gridItem6 {
+	background-image: url("res/monster.jpg");
+}
+
+#gridItem7 {
+	background-image: url("res/monster.jpg");
+}
+
 #skillSec {
 	background-image: url("res/berg.jpg");
 	display: flex;
