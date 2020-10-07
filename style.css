@@ -221,7 +221,7 @@ h4 {
 	}
 
 	.skillWrapper {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
 	}
 
 	.transparentSec {
@@ -236,10 +236,6 @@ h4 {
 @media only screen and (max-device-width: 600px) {
 
 	.gridContainer{
-		grid-template-columns: 1fr;
-	}
-
-	.skillWrapper {
 		grid-template-columns: 1fr;
 	}
 
