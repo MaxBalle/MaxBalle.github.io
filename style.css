@@ -1,5 +1,5 @@
 :root {
-	--sideMargin: 90px;
+	--sideMargin: 80px;
 }
 
 * { margin: 0, padding: 0 }
@@ -20,6 +20,7 @@ h1, h2, h3, h4, p, a {
 
 h1 {
 	font-size: 6em;
+	margin-left: -0.04em;
 }
 
 h2 {
@@ -53,7 +54,7 @@ h4 {
 	color: white;
 }
 
-#landingSec {
+.landingSec {
 	height: 100vh;
 	background-image: url("res/profile.jpg");
 	display: flex;
@@ -62,7 +63,7 @@ h4 {
 }
 
 .greetingWrapper {
-	width: 300px;
+	min-width: 300px;
 }
 
 .icon {

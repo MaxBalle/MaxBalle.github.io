@@ -1,0 +1,37 @@
+#coreLanding {
+	background-image: url("res/coreicon.png ");
+	background-size: 60%;
+	background-repeat: no-repeat;
+}
+
+#meganLanding {
+	background-image: url("res/megan.jpg ");
+}
+
+#rgbledLanding {
+  background-image: url("res/monster.jpg");
+}
+
+#monsterLanding {
+	background-image: url("res/monster.jpg ");
+}
+
+#tischLanding {
+	background-image: url("res/tisch.png ");
+}
+
+#maskeLanding {
+  background-image: url("res/maske.jpg");
+}
+
+#labpsLanding {
+  background-image: url("res/monster.jpg");
+}
+
+#mausLanding {
+  background-image: url("res/monster.jpg");
+}
+
+.greetingWrapper {
+	width: 1500px;
+}
