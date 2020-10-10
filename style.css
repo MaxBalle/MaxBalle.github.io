@@ -86,6 +86,17 @@ h4 {
 	width: 100%;
 }
 
+.menuIcon {
+	cursor: pointer;
+	color: grey;
+	position: fixed;
+	top: 0;
+	right: 0;
+	font-size: 40px!important;
+	width: auto;
+	margin: 20px;
+}
+
 .projektHead {
 	padding-bottom: 120px;
 }
