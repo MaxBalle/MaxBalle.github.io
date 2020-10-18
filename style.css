@@ -89,12 +89,31 @@ h4 {
 .menuIcon {
 	cursor: pointer;
 	color: grey;
-	position: fixed;
-	top: 0;
-	right: 0;
 	font-size: 40px!important;
 	width: auto;
 	margin: 20px;
+}
+
+#openIcon {
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+.hiddenIcon {
+	background-color: grey;
+	color: white;
+	display: block;
+	padding-right: 20px;
+	margin-right: 0;
+	margin-bottom: 0;
+}
+
+#menuIconWrapper {
+	position: fixed;
+	top: 0;
+	right: -60px;
+	transition: all 0.4s;
 }
 
 .projektHead {

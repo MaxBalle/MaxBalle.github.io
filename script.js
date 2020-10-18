@@ -6,3 +6,11 @@ document.querySelectorAll(".viewAll").forEach(btn => {
     btn.innerHTML = text;
   });
 });
+
+document.querySelector("#openIcon").addEventListener("click", (e) => {
+  document.querySelector("#menuIconWrapper").style.transform = "translate(-60px, 0)"
+});
+
+document.querySelector("#closeIcon").addEventListener("click", (e) => {
+  document.querySelector("#menuIconWrapper").style.transform = "translate(60px, 0)"
+});
