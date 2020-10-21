@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kontakt</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="sub.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="transparentSec landingSec" id="contactLanding">
+      <div class="greetingWrapper">
+        <h1>Kontakt</h1>
+      </div>
+      <div class="iconWrapper">
+        <span class="material-icons icon scrollIcon">expand_more</span>
+      </div>
+    </div>
+    <div class="solidSec" id="messageSec">
+      <h3>Schreib mir eine Nachricht</h3>
+      <form class="messageField" name="messageFieldName" action="danke.html">
+        <label for="email">Name</label>
+        <input type="text" name="name" value="" class="inputField">
+        <label for="email">Email</label>
+        <input type="text" name="email" value="" class="inputField">
+        <label for="message">Nachricht</label>
+        <input type="text" name="message" value="" class="inputField" id="messageInput">
+        <input type="submit" value="Submit" id="submitBtnContact" href="index.html">
+      </form>
+      <script language="JavaScript" src="gen_validatorv31.js">
+        var frmvalidator  = new Validator("messageFieldName");
+        frmvalidator.addValidation("name","req","Please provide your name");
+        frmvalidator.addValidation("email","req","Please provide your email");
+        frmvalidator.addValidation("email","email","Please enter a valid email address");
+        </script>
+    </div>
+  </body>
+</html>

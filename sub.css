@@ -32,6 +32,30 @@
   background-image: url("res/monster.jpg");
 }
 
+#contactLanding {
+	background-image: url("res/profile.jpg");
+}
+
+#dankeLanding {
+	background-image: url("res/profile.jpg");
+}
+
 .greetingWrapper {
 	width: 1500px;
+}
+
+.messageField {
+	display: flex;
+	margin: 180px 0;
+	display: grid;
+	grid-template-columns: 20% auto;
+	row-gap: 20px;
+}
+
+#messageInput {
+	height: 6em;
+}
+
+#submitBtnContact {
+	grid-row-end: span 2;
 }
