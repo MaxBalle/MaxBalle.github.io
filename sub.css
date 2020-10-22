@@ -59,3 +59,7 @@
 #submitBtnContact {
 	grid-row-end: span 2;
 }
+
+.refLink {
+	margin-top: 20px;
+}

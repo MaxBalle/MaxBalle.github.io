@@ -109,6 +109,12 @@ h4 {
 	margin-bottom: 0;
 }
 
+.smallIcon {
+	padding: 3px;
+	padding-right: 23px;
+	font-size: 34px!important;
+}
+
 #menuIconWrapper {
 	position: fixed;
 	top: 0;

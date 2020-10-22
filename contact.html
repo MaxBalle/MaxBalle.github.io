@@ -20,21 +20,16 @@
     </div>
     <div class="solidSec" id="messageSec">
       <h3>Schreib mir eine Nachricht</h3>
-      <form class="messageField" name="messageFieldName" action="danke.html">
-        <label for="email">Name</label>
+      <form class="messageField" name="messageFieldName" action="messageHandler.php">
+        <label for="name">Name</label>
         <input type="text" name="name" value="" class="inputField">
         <label for="email">Email</label>
-        <input type="text" name="email" value="" class="inputField">
+        <input type="email" name="email" value="" class="inputField">
         <label for="message">Nachricht</label>
         <input type="text" name="message" value="" class="inputField" id="messageInput">
-        <input type="submit" value="Submit" id="submitBtnContact" href="index.html">
+        <input type="submit" value="Submit" id="submitBtnContact" onclick="Validate(document.messageField.email)">
       </form>
-      <script language="JavaScript" src="gen_validatorv31.js">
-        var frmvalidator  = new Validator("messageFieldName");
-        frmvalidator.addValidation("name","req","Please provide your name");
-        frmvalidator.addValidation("email","req","Please provide your email");
-        frmvalidator.addValidation("email","email","Please enter a valid email address");
-        </script>
     </div>
+    <script src="script.js" charset="utf-8"></script>
   </body>
 </html>
