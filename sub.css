@@ -1,3 +1,8 @@
+textarea {
+	resize: none;
+	padding-top: 5px;
+}
+
 #coreLanding {
 	background-image: url("res/coreicon.png ");
 	background-size: 60%;
@@ -44,21 +49,77 @@
 	width: 1500px;
 }
 
-.messageField {
-	display: flex;
-	margin: 180px 0;
-	display: grid;
-	grid-template-columns: 20% auto;
-	row-gap: 20px;
+.contactForm {
+	margin: 180px 0 120px;
 }
 
-#messageInput {
-	height: 6em;
+.formItemWrapper {
+	width: 100%;
+	min-height: 50px;
+	position: relative;
+	margin-bottom: 20px;
+	overflow: hidden;
 }
 
-#submitBtnContact {
-	grid-row-end: span 2;
+.formItemWrapper input, .formItemWrapper textarea {
+	width: 100%;
+	height: 30px;
+	margin-top: 20px;
+	border: none;
+	outline: none;
 }
+
+.formItemWrapper textarea {
+	height: 19px;
+	margin-top: 22px;
+}
+
+.formItemWrapper label {
+	position: absolute;
+	width: 100%;
+	height: inherit;
+	left: 0px;
+	bottom: 0px;
+	top: -1px;
+	pointer-events: none;
+	border-bottom: 1px solid black;
+}
+
+.formItemWrapper label::after {
+	content: "";
+	position: absolute;
+	left: 0px;
+	bottom: -2px;
+	width: 100%;
+	height: 100%;
+	border-bottom: 3px solid lightblue;
+	transform: translateX(-100%);
+	transition: transform 0.4s ease;
+}
+
+.contentFormItem {
+	position: absolute;
+	bottom: 5px;
+	left: 0px;
+	transition: all 0.4s ease;
+}
+
+.formItemWrapper input:focus + .lableFormItem .contentFormItem,
+.formItemWrapper input:valid + .lableFormItem .contentFormItem,
+.formItemWrapper textarea:focus + .lableFormItem .contentFormItem,
+.formItemWrapper textarea:valid + .lableFormItem .contentFormItem {
+	transform: translateY(-150%);
+	font-size: 14px;
+	color: lightblue;
+}
+
+.formItemWrapper input:focus + .lableFormItem::after,
+.formItemWrapper input:valid + .lableFormItem::after,
+.formItemWrapper textarea:focus + .lableFormItem::after,
+.formItemWrapper textarea:valid + .lableFormItem::after {
+	transform: translateX(0%);
+}
+
 
 .refLink {
 	margin-top: 20px;

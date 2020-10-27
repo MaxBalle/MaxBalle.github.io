@@ -20,17 +20,35 @@
     </div>
     <div class="solidSec" id="messageSec">
       <h3>Schreib mir eine Nachricht</h3>
-      <form class="messageField" name="messageFieldName" action="https://formsubmit.co/balle-max@web.de" method="POST">
-        <label for="name">Name</label>
-        <input type="text" name="name" value="" class="inputField">
-        <label for="email">Email</label>
-        <input type="email" name="_replyto" value="" class="inputField">
-        <label for="message">Nachricht</label>
-        <input type="text" name="message" value="" class="inputField" id="messageInput">
-        <input type="hidden" name="_next" value="www.maxballe.github.io" />
-        <input type="submit" value="Submit" id="submitBtnContact" onclick="Validate(document.messageField.email)">
+      <form class="contactForm" action="https://formsubmit.co/balle-max@web.de" method="POST">
+        <div class="formItemWrapper">
+          <input type="text" name="name" autocomplete="off" required>
+          <label for="name" class="lableFormItem">
+            <span class="contentFormItem">Name</span>
+          </label>
+        </div>
+        <div class="formItemWrapper">
+          <input type="text" name="_replyto" autocomplete="off" required>
+          <label for="email" class="lableFormItem">
+            <span class="contentFormItem">Email</span>
+          </label>
+        </div>
+        <div class="formItemWrapper">
+          <input type="text" name="message" autocomplete="off" required>
+          <label for="message" class="lableFormItem">
+            <span class="contentFormItem">Nachricht</span>
+          </label>
+        </div>
+        <div class="formItemWrapper">
+          <textarea name="message" required></textarea>
+          <label for="message" class="lableFormItem">
+            <span class="contentFormItem">Nachricht</span>
+          </label>
+        </div>
+        <input type="hidden" name="_next" value="www.maxballe.github.io/danke.html">
+        <input type="submit" value="Submit" onclick="Validate(document.messageField.email)">
       </form>
     </div>
-    <script src="script.js" charset="utf-8"></script>
+    <script src="subscript.js" charset="utf-8"></script>
   </body>
 </html>

@@ -10,7 +10,7 @@ html, body {
 	margin: 0;
 }
 
-h1, h2, h3, h4, p, a {
+h1, h2, h3, h4, p, a, input, label, textarea {
   margin: 0;
 	padding: 0;
 	color: grey;
