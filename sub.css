@@ -34,7 +34,7 @@ textarea {
 }
 
 #mausLanding {
-  background-image: url("res/maus1.jpg");
+  background-image: url("res/maus2.jpg");
 }
 
 #contactLanding {
@@ -43,6 +43,17 @@ textarea {
 
 #dankeLanding {
 	background-image: url("res/profile.jpg");
+}
+
+#mausOcean {
+	background-image: url("res/maus1.jpg");
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#mausV1 {
+	background-image: url("res/maus1.jpg");
 }
 
 .greetingWrapper {

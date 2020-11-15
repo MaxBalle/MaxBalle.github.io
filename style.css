@@ -52,6 +52,10 @@ h4 {
   padding: 180px var(--sideMargin);
 }
 
+.fullHightSec {
+	height: calc(100vh - 330px);
+}
+
 .transparentSec h1, .transparentSec h2, .transparentSec h3, .transparentSec h4 {
 	color: white;
 }
@@ -283,7 +287,7 @@ h4 {
 }
 
 #gridItem7 {
-	background-image: url("res/maus1.jpg");
+	background-image: url("res/maus2.jpg");
 }
 
 #skillSec {
